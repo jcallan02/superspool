@@ -71,7 +71,7 @@ void app_main(void)
     while (1) {
         printf("Forward slow\n");
         set_motor(300);
-        vTaskDelay(pdMS_TO_TICKS(3000));
+        vTaskDelay(pdMS_TO_TICKS(6000));
 
         printf("Stop\n");
         set_motor(0);
@@ -79,7 +79,7 @@ void app_main(void)
 
         printf("Reverse slow\n");
         set_motor(-300);
-        vTaskDelay(pdMS_TO_TICKS(3000));
+        vTaskDelay(pdMS_TO_TICKS(6000));
 
         printf("Stop\n");
         set_motor(0);
